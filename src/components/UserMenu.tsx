@@ -29,17 +29,17 @@ const UserMenu:React.FC<UserMenuProperties> = ({user}) => {
 			<button className="user-menu-toggle" onClick={toggleMenu}>
 				Menu
 			</button>
-			<ul className="user-menu left collapsed flex-column flex--align-start flex--justify-start">
+			<div className="user-menu left collapsed flex-column flex--align-start flex--justify-start">
 				{user && 
-					<li>Profile</li>
+					<a href="">Profile</a>
 				}
 				{user && 
-					<li>Log Out</li>
+					<a href="">Log Out</a>
 				}
 				{!user && 
-					<li>Log In</li>
+					<a href="">Log In</a>
 				}
-			</ul>
+			</div>
 		</div>
 	)
 }
